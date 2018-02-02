@@ -1,8 +1,8 @@
 package createThread;
 
-public class DataNotShare extends Thread{
+public class DataNotShareP10 extends Thread{
     private int count = 5;
-    public DataNotShare(String name){
+    public DataNotShareP10(String name){
         super();
         this.setName(name); //设置线程名称
     }

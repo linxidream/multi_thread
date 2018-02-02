@@ -47,12 +47,26 @@ public class CreateThreadTest {
         mythreadP75.start();
         mythreadP76.start();*/
 
-        //不共享数据测试运行
-        DataNotShare dataNotShare1 = new DataNotShare("A");
-        DataNotShare dataNotShare2 = new DataNotShare("B");
-        DataNotShare dataNotShare3 = new DataNotShare("C");
-        dataNotShare1.start();
-        dataNotShare2.start();
-        dataNotShare3.start();
+  /*      //不共享数据测试运行
+        DataNotShareP10 dataNotShareP101 = new DataNotShareP10("A");
+        DataNotShareP10 dataNotShareP102 = new DataNotShareP10("B");
+        DataNotShareP10 dataNotShareP103 = new DataNotShareP10("C");
+        dataNotShareP101.start();
+        dataNotShareP102.start();
+        dataNotShareP103.start();*/
+
+        //共享数据测试运行
+
+        DataShareP11 dataShareP11 = new DataShareP11();
+        Thread a=new Thread(dataShareP11,"A");
+        Thread b=new Thread(dataShareP11,"B");
+        Thread c=new Thread(dataShareP11,"C");
+        Thread d=new Thread(dataShareP11,"D");
+        Thread e=new Thread(dataShareP11,"E");
+        a.start();
+        b.start();
+        c.start();
+        d.start();
+        e.start();
     }
 }
