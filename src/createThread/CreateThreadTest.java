@@ -56,8 +56,8 @@ public class CreateThreadTest {
         dataNotShareP103.start();*/
 
         //共享数据测试运行
-
-        DataShareP11 dataShareP11 = new DataShareP11();
+        //线程不安全
+/*        DataShareP11 dataShareP11 = new DataShareP11();
         Thread a=new Thread(dataShareP11,"A");
         Thread b=new Thread(dataShareP11,"B");
         Thread c=new Thread(dataShareP11,"C");
@@ -67,6 +67,20 @@ public class CreateThreadTest {
         b.start();
         c.start();
         d.start();
-        e.start();
+        e.start();*/
+
+        //printf i--时的线程不安全
+       /* MyThreadP14 mythreadP14 = new MyThreadP14();
+        Thread thread1 = new Thread(mythreadP14);
+        Thread thread2 = new Thread(mythreadP14);
+        Thread thread3 = new Thread(mythreadP14);
+        Thread thread4 = new Thread(mythreadP14);
+        Thread thread5 = new Thread(mythreadP14);
+        thread1.start();
+        thread2.start();
+        thread3.start();
+        thread4.start();
+        thread5.start();*/
+
     }
 }
