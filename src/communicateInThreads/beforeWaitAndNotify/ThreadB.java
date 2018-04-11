@@ -10,11 +10,15 @@ public class ThreadB extends Thread{
 
     @Override
     public void run() {
+        System.out.println(currentThread().getName() + list.getSize());
+        long i=0;
         try {
             while(true){
-                System.out.println(currentThread().getName() + list.getSize());
-                if(list.getSize() == 5){
-                    System.out.println(currentThread().getName() + " == 5 了，退出");
+                //System.out.println(currentThread().getName() + list.getSize());
+//                Thread.sleep(1);
+                 if(list.getSize() == 5){
+                     i++;
+                    System.out.println(currentThread().getName() + " >= 5 了，退出. list.size="+ list.getSize());
                     throw  new InterruptedException();
                 }
             }
