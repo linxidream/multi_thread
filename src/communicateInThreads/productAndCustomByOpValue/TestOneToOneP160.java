@@ -1,6 +1,6 @@
-package communicateInThreads.productAndCustomOneToOne;
+package communicateInThreads.productAndCustomByOpValue;
 
-public class RunP160 {
+public class TestOneToOneP160 {
     public static void main(String[] args) {
         String lock = new String("");
         P p = new P(lock);

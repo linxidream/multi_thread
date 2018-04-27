@@ -1,4 +1,4 @@
-package communicateInThreads.productAndCustomManytoMany;
+package communicateInThreads.productAndCustomByOpValue;
 
 public class C {
     private String lock;
@@ -13,6 +13,7 @@ public class C {
                     System.out.println("消费者：" + Thread.currentThread().getName() + " waitting");
                     lock.wait();
                 }
+//                Thread.sleep(100);
                 System.out.println("消费者：" + Thread.currentThread().getName() + "get value =" + ValueObject.value);
                 ValueObject.value = "";
                 lock.notify();

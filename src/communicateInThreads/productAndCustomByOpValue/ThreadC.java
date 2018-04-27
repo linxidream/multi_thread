@@ -1,4 +1,4 @@
-package communicateInThreads.productAndCustomOneToOne;
+package communicateInThreads.productAndCustomByOpValue;
 
 public class ThreadC extends Thread{
     private C c;
