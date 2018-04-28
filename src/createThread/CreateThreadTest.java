@@ -25,7 +25,7 @@ public class CreateThreadTest {
             myThreadP6.start();
             for(int i = 0; i < 10; i++){
                 int time = (int) (Math.random() * 1000);
-                myThreadP6.sleep(time);
+                myThreadP6.sleepAndJoinDiff(time);
                 System.out.println("main "+ i + " = " + myThreadP6.currentThread().getName());
             }
         }catch(InterruptedException e){

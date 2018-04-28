@@ -15,7 +15,7 @@ public class ThreadB extends Thread{
         try {
             while(true){
                 //System.out.println(currentThread().getName() + list.getSize());
-//                Thread.sleep(1);
+//                Thread.sleepAndJoinDiff(1);
                  if(list.getSize() == 5){
                      i++;
                     System.out.println(currentThread().getName() + " >= 5 了，退出. list.size="+ list.getSize());

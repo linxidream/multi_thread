@@ -13,7 +13,7 @@ public class P {
                     System.out.println("生产者："+Thread.currentThread().getName()+" waitting");
                     lock.wait();
                 }
-//                Thread.sleep(100);
+//                Thread.sleepAndJoinDiff(100);
                 String value = System.currentTimeMillis() + "_" + System.nanoTime();
                 System.out.println("生产者："+Thread.currentThread().getName()+"set value = " + value);
                 ValueObject.value = value;

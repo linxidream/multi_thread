@@ -13,7 +13,7 @@ public class C {
                     System.out.println("消费者：" + Thread.currentThread().getName() + " waitting");
                     lock.wait();
                 }
-//                Thread.sleep(100);
+//                Thread.sleepAndJoinDiff(100);
                 System.out.println("消费者：" + Thread.currentThread().getName() + "get value =" + ValueObject.value);
                 ValueObject.value = "";
                 lock.notify();

@@ -1,4 +1,4 @@
-package communicateInThreads.sleep;
+package communicateInThreads.sleepAndJoinDiff;
 
 public class ThreadB extends Thread{
 

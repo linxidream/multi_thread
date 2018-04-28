@@ -7,7 +7,7 @@ public class test {
         System.out.println("main begin thread isAlive=" + thread.isAlive());
         thread.setName("AAAA");
         thread.start();
-       // Thread.sleep(1000);
+       // Thread.sleepAndJoinDiff(1000);
         System.out.println("main end thread isAlive=" + thread.isAlive());
     }
 }
