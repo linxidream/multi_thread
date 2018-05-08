@@ -1,0 +1,9 @@
+synchornized（非this对象x）代码块 锁定的是x对象，是将x本身作为对象监听器
+synchornized方法/synchornized（this）   锁定当前对象
+静态synchornized方法，synchornized（class）代码块  锁定*.java 类，对Class类持锁,Class锁对类中所有对象实例起作用
+在synchornized语句块中同步执行，不在的异步执行
+一个对象对一个类synchornized代码块使用的同一个对象监听器
+wait() 释放锁
+join() 内部使用wait()实现，也释放锁
+notify()/notifyAll()  运行完同步块中的语句释放锁
+sleep() 不释放锁
